@@ -18,5 +18,6 @@ func _unhandled_input(_event):
 				get_tree().paused = false
 			else:
 				menu.show()
-
+		get_tree().paused = true
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 

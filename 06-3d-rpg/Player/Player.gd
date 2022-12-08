@@ -3,7 +3,7 @@ extends KinematicBody
 onready var Camera = $Pivot/Camera					# the camera attached to the player (in a "pivot" node so we rotate the entire player left and right but only move its "head" up and down)
 
 var gravity = -30									# downward (-y) acceleration applied on every frame
-var max_speed = 1									# velocity multiplier applied to every movement
+var max_speed = 10									# velocity multiplier applied to every movement
 var mouse_sensitivity = 0.001						# translating the mouse XY coordinates into angular (radian) movement
 var mouse_range = 1.2								# Clamp to about a 140 degree range of motion
 
@@ -49,7 +49,7 @@ func _physics_process(delta):
 
 
 		
-	if Input.is_action_just_pressed("shoot"):
+	if Input.is_action_just_pressed("Shoot"):
 		$AnimationTree.active = false
 		$AnimationPlayer.play("Shoot")
 

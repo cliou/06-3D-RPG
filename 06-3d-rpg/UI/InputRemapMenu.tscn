@@ -25,9 +25,6 @@ margin_bottom = 55.0
 text = "Click on a button to reassign its action key."
 align = 1
 autowrap = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="RemapButtonGroup" type="Button" parent="."]
 anchor_left = 0.5

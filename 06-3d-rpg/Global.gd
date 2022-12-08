@@ -1,6 +1,6 @@
 extends Spatial
 
-var menu = null
+#var menu = null
 const SAVE_PATH = "res://settings.cfg"
 var save_file = ConfigFile.new()
 var inputs = ["left","right","forward","back"]

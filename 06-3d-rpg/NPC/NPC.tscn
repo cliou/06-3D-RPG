@@ -137,6 +137,4 @@ shape = SubResource( 7 )
 [node name="CollisionShape" type="CollisionShape" parent="Area"]
 shape = SubResource( 8 )
 
-[connection signal="body_entered" from="." to="." method="_on_Enemy_body_entered"]
-[connection signal="body_entered" from="." to="." method="_on_GhostNPC_body_entered"]
 [connection signal="body_entered" from="Area" to="." method="_on_Area_body_entered"]
